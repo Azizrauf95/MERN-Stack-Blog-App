@@ -5,13 +5,11 @@ const colors = require('colors')
 const dotenv = require('dotenv')
 const connectDB = require('./config/db')
 const path = require('path')
-const fileURLToPath = require('url')
+ 
 //env config
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
+ 
 //router import
 const userRoutes = require("./routes/userRoutes");
 const blogRoutes = require("./routes/blogRoutes");
